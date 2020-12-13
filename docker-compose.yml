@@ -1,6 +1,6 @@
 ark:
   container_name: ark
-  image: boerngenschmidt/ark-docker
+  image: lettucech/ark-docker
   environment:
     - SESSIONNAME=Ark Docker
     - SERVERMAP=TheIsland
@@ -17,7 +17,7 @@ ark:
     - ARK_GID=1000
     - ARK_UID=1000
   volumes:
-    - /my/path/to/ark:/ark
+    - ~/ark-server:/ark
   ports:
    - 7778:7778/udp
    - 7778:7778
